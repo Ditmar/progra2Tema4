@@ -1,0 +1,13 @@
+package uiRegisterContact;
+
+import javax.swing.JPanel;
+
+public class RegisterContactComponent {
+	RegisterTemplate template;
+	public RegisterContactComponent() {
+		
+	}
+	public JPanel getViewPanel() {
+		return template;
+	}
+}

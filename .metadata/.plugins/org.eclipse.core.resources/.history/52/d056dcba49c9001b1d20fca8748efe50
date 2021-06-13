@@ -1,0 +1,23 @@
+package uiComponents;
+
+import java.awt.event.ActionEvent;
+
+import javax.swing.AbstractAction;
+import javax.swing.JPanel;
+
+public class ContactsComponent {
+	private ContactsTemplate template;
+	public ContactsComponent() {
+		//Crea los objetos Gráficos
+		template = new ContactsTemplate();
+		//Se maneja la lógica del compoennte
+	}
+	public void eventsSearch() {
+		template.getSearchTextFiled().addActionListener((e) -> {
+			System.out.print("Acciòn");
+		});
+	}
+	public JPanel getViewPanel() {
+		return template;
+	}
+}

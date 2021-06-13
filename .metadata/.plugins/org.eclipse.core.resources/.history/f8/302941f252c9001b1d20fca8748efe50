@@ -1,0 +1,25 @@
+package uiComponents;
+
+import java.awt.event.ActionEvent;
+import java.awt.event.KeyEvent;
+import java.awt.event.KeyListener;
+
+import javax.swing.AbstractAction;
+import javax.swing.JOptionPane;
+import javax.swing.JPanel;
+
+import contacts.ManagementContacts;
+
+public class ContactsComponent {
+	private ContactsTemplate template;
+	private ManagementContacts contacts;
+	public ContactsComponent() {
+		//Crea los objetos Gráficos
+		template = new ContactsTemplate();
+		contacts = new ManagementContacts();
+		//Se maneja la lógica del compoennte
+	}
+	public JPanel getViewPanel() {
+		return template;
+	}
+}

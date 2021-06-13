@@ -1,0 +1,12 @@
+package uiControlComponents;
+
+import javax.swing.JPanel;
+
+public class ControlComponent {
+	public ControlComponent() {
+		
+	}
+	public JPanela getViewPanel() {
+		
+	}
+}

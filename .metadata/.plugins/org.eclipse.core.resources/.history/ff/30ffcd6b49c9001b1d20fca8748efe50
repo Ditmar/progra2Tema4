@@ -1,0 +1,15 @@
+package uiComponents;
+
+import javax.swing.JPanel;
+
+public class ContactsComponent {
+	private ContactsTemplate template;
+	public ContactsComponent() {
+		//Crea los objetos Gráficos
+		template = new ContactsTemplate();
+		//Se maneja la lógica del compoennte
+	}
+	public JPanel getViewPanel() {
+		return template;
+	}
+}

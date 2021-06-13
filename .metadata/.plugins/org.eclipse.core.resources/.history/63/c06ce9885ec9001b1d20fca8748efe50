@@ -1,0 +1,5 @@
+package myevents;
+
+public interface OnLoadEventCreate {
+
+}

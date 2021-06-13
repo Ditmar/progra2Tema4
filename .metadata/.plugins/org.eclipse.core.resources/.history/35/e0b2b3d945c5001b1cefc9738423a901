@@ -1,0 +1,12 @@
+import java.util.ArrayList;
+import java.util.Scanner;
+
+import contacts.Contact;
+import contacts.ManagementContacts;
+
+public class main {
+
+	public static void main(String[] args) {
+		
+	}
+}

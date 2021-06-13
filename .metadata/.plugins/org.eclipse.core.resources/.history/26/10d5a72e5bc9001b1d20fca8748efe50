@@ -1,0 +1,25 @@
+package uiRegisterContact;
+
+import javax.swing.JFrame;
+import javax.swing.JPanel;
+
+import contacts.ManagementContacts;
+
+public class RegisterContactComponent {
+	RegisterTemplate template;
+	ManagementContacts contacts;
+	public RegisterContactComponent(ManagementContacts contacts) {
+		template = new RegisterTemplate();
+		this.contacts = contacts;
+		loadEvents();
+	}
+	private void loadEvents() {
+		// TODO Auto-generated method stub
+		template.getBtnsend().addActionListener(() -> {
+			
+		});
+	}
+	public JFrame getViewPanel() {
+		return template;
+	}
+}

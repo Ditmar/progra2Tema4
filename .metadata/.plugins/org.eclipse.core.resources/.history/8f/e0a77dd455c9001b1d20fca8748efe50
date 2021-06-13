@@ -1,0 +1,14 @@
+package uiControlComponents;
+
+import javax.swing.JPanel;
+
+public class ControlComponent {
+	private ControlTemplate template;
+	public ControlComponent() {
+		template = new ControlTemplate();
+		loadEvents();
+	}
+	public JPanel getViewPanel() {
+		return template;
+	}
+}

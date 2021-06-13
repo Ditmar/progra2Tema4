@@ -1,0 +1,37 @@
+package uiControlComponents;
+
+import javax.swing.JPanel;
+
+import contacts.ManagementContacts;
+import ui.MainWindow;
+import uiRegisterContact.RegisterContactComponent;
+
+public class ControlComponent {
+	private ControlTemplate template;
+	private RegisterContactComponent registerComponent;
+	private ManagementContacts contacts;
+	public ControlComponent(ManagementContacts contacts) {
+		template = new ControlTemplate();
+		this.contacts = contacts;
+		loadComponents();
+		loadEvents();
+	}
+	private void loadComponents() {
+		// TODO Auto-generated method stub
+		registerComponent = new RegisterContactComponent(this.contacts);
+		
+	}
+	private RegisterContactComponent getRegisterComponent() {
+		return 
+	}
+	private void loadEvents() {
+		// TODO Auto-generated method stub
+		template.getAddContact().addActionListener((e) -> {
+			loadComponents();
+			registerComponent.getClass();
+		});
+	}
+	public JPanel getViewPanel() {
+		return template;
+	}
+}

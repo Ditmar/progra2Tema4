@@ -1,0 +1,14 @@
+package utils;
+
+public class AppDimension {
+	public static Integer sizewindows_width = 1004;
+	public static Integer sizewindows_height = 500;
+	
+	public static Integer sizepanel_rigth_width = 400;
+	public static Integer sizepanel_rigth_height = 500;
+	
+	public static Integer sizepanel_left_width = 600;
+	public static Integer sizepanel_left_height = 500;
+	
+	
+}

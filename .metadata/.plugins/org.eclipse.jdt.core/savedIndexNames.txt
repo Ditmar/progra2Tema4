@@ -1,0 +1,7 @@
+INDEX VERSION 1.131+C:\Users\Lobo_\progra2tema4\.metadata\.plugins\org.eclipse.jdt.core
+3812095782.index
+221877770.index
+2486224816.index
+1951642961.index
+2102616709.index
+173298195.index

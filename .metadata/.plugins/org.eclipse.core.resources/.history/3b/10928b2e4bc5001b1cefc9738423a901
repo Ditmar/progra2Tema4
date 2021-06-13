@@ -1,0 +1,13 @@
+package uiComponents;
+
+import javax.swing.JPanel;
+
+public class ContactsComponent {
+	private ContactsTemplate template;
+	public ContactsComponent() {
+		template = new ContactsTemplate();
+	}
+	public JPanel getViewPanel() {
+		return template;
+	}
+}

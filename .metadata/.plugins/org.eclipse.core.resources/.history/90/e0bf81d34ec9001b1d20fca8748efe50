@@ -1,0 +1,10 @@
+package uiControlComponents;
+
+public class ControlTemplate {
+	public ControlTemplate() {
+		createInterface();
+	}
+	private void createInterface() {
+		
+	}
+}

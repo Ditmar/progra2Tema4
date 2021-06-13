@@ -1,0 +1,15 @@
+package uiControlComponents;
+
+import javax.swing.JButton;
+import javax.swing.JPanel;
+
+public class ControlTemplate {
+	private JPanel container;
+	private JButton addContact;
+	public ControlTemplate() {
+		createInterface();
+	}
+	private void createInterface() {
+		
+	}
+}

@@ -1,0 +1,7 @@
+package uiControlComponents;
+
+public class ControlTemplate {
+	public ControlTemplate() {
+		
+	}
+}

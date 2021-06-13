@@ -1,0 +1,20 @@
+package uiControlComponents;
+
+import javax.swing.JPanel;
+
+public class ControlComponent {
+	private ControlTemplate template;
+	public ControlComponent() {
+		template = new ControlTemplate();
+		loadEvents();
+	}
+	private void loadEvents() {
+		// TODO Auto-generated method stub
+		template.getAddContact().addActionListener((e) -> {
+			//llamar a una ventana
+		});
+	}
+	public JPanel getViewPanel() {
+		return template;
+	}
+}

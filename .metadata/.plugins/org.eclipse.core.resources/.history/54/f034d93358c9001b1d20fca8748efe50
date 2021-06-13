@@ -1,0 +1,7 @@
+package uiRegisterContact;
+
+public class RegisterContactComponent {
+	public RegisterContactComponent() {
+		
+	}
+}

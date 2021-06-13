@@ -1,0 +1,73 @@
+package uiRegisterContact;
+
+import java.awt.Dimension;
+import java.awt.FlowLayout;
+
+import javax.swing.BorderFactory;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.JPanel;
+import javax.swing.JTextField;
+import javax.swing.SwingConstants;
+import javax.swing.border.Border;
+
+import colors.MyColors;
+import utils.AppDimension;
+
+public class RegisterTemplate extends JFrame {
+	private JPanel container;
+	private JLabel label1, label2, label3, label4;
+	private JTextField name, email, age, telf;
+	private Border borderTest;
+	public RegisterTemplate() {
+		super("Registro de Contactos");
+		createInterface();
+		
+		this.setSize(AppDimension.size_register_form_width, AppDimension.size_register_form_height);
+		//this.setPreferredSize(new Dimension(AppDimension.sizewindows_width, AppDimension.sizewindows_height));
+		this.setLocationRelativeTo(this);
+		this.setLayout(new FlowLayout(FlowLayout.CENTER, 0, 0));
+		this.setVisible(true);
+	}
+
+	private void createInterface() {
+		// TODO Auto-generated method stub
+		borderTest = BorderFactory.createMatteBorder(0, 0, 3, 0, MyColors.thirth);
+		container = new JPanel();
+		container.setPreferredSize(new Dimension(AppDimension.size_register_form_width, AppDimension.size_register_form_height));
+		container.setLayout(new FlowLayout(FlowLayout.LEFT));
+		container.setBackground(MyColors.primary);
+		
+		label1 = new JLabel("Apellidos y Nombres");
+		label1.setPreferredSize(new Dimension(150, 30));
+		label1.setForeground(MyColors.fourth);
+		label1.setHorizontalAlignment(SwingConstants.LEFT);
+		
+		name = new JTextField("");
+		name.setSize(260, 40);
+		name.setPreferredSize(new Dimension(200, 30));
+		name.setForeground(MyColors.thirth);
+		name.setBackground(MyColors.secondary);
+		name.setHorizontalAlignment(SwingConstants.CENTER);
+		name.setBorder(borderTest);
+		
+		
+		label2 = new JLabel("Apellidos y Nombres");
+		label2.setPreferredSize(new Dimension(150, 30));
+		label2.setForeground(MyColors.fourth);
+		label2.setHorizontalAlignment(SwingConstants.LEFT);
+		
+		email = new JTextField("Email");
+		email.setSize(260, 40);
+		email.setPreferredSize(new Dimension(200, 30));
+		email.setForeground(MyColors.thirth);
+		email.setBackground(MyColors.secondary);
+		email.setHorizontalAlignment(SwingConstants.CENTER);
+		email.setBorder(borderTest);
+		
+		
+		container.add(label1);
+		container.add(name);
+		this.add(container);
+	}
+}

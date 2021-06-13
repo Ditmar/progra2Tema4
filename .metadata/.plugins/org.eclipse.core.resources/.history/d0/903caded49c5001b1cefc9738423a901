@@ -1,0 +1,11 @@
+package utils;
+
+public class AppDimension {
+	public static Integer sizewindows_width;
+	public static Integer sizewindows_height;
+	
+	public static Integer sizewindows_width;
+	public static Integer sizewindows_height;
+	
+	
+}
